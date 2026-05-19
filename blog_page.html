@@ -13,14 +13,44 @@
         Skip to main content
     </a>
 
-    <header>
-        <nav aria-label="Main Navigation">
+    <header><nav aria-label="Main Navigation">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li>
+                    <a href="index.html" aria-current="page">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="blog_page.html">
+                        Blog
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact Us
+                    </a>
+                </li>
             </ul>
         </nav>
-    </header>
+
+    <form role="search">
+
+        <label for="search-input">
+            Search the website
+        </label>
+        <input type="search"
+            id="search-input"
+            name="search"
+            placeholder="Search blogs or topics"
+            autocomplete="off"
+        />
+        <button type="submit">
+            Search
+        </button>
+    </form>    
+</header>
 
     <main id="main-content">
 

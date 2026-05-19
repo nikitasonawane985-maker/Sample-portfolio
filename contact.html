@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+	<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
@@ -14,11 +14,44 @@
     </a>
 
     <header>
-        <nav aria-label="Main Navigation">
+<nav aria-label="Main Navigation">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="index.html" >
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="blog_page.html">
+                        Blog
+                    </a>
+                </li>
+                <li>
+                    <a href="faq.html">
+                        FAQ
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html" aria-current="page">
+                        Contact Us
+                    </a>
+                </li>
             </ul>
         </nav>
+
+    <form role="search">
+
+        <label for="search-input">
+            Search the website
+        </label>
+
+        <input            type="search"            id="search-input"            name="search"            placeholder="Search blogs or topics"            autocomplete="off"        />
+        <button type="submit">
+            Search
+        </button>
+    </form>
     </header>
 
     <main id="main-content">
@@ -39,14 +72,7 @@
                         Full Name
                     </label>
 
-                    <input
-                        type="text"
-                        id="full-name"
-                        name="full-name"
-                        placeholder="John Doe"
-                        autocomplete="name"
-                        required
-                    />
+                    <input                        type="text"                        id="full-name"                        name="full-name"                        placeholder="John Doe"                        autocomplete="name"                        required                    />
                 </div>
 
                 <br />
@@ -56,14 +82,7 @@
                         Email ID
                     </label>
 
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="abc@gmail.com"
-                        autocomplete="email"
-                        required
-                    />
+                    <input                        type="email"                        id="email"                        name="email"                        placeholder="abc@gmail.com"                        autocomplete="email"                        required                    />
                 </div>
 
                 <br />
@@ -73,17 +92,40 @@
                         Mobile Number
                     </label>
 
-                    <input
-                        type="tel"
-                        id="mobile-number"
-                        name="mobile-number"
-                        placeholder="+91 9876543210"
-                        autocomplete="tel"
-                        required
-                    />
+                    <input                        type="tel"                        id="mobile-number"                        name="mobile-number"                        placeholder="+91 9876543210"                        autocomplete="tel"                        required                    />
                 </div>
 
                 <br />
+<fieldset>
+
+    <legend>
+        What is the purpose of your query?
+    </legend>
+
+    <label for="general-question">
+        General Question
+    </label>
+
+    <input        type="radio"        id="general-question"        name="query-purpose"        value="general-question"        required    />
+
+
+    <br />
+
+    <label for="accessibility-feedback">
+        Accessibility Feedback
+    </label>
+
+    <input         type="radio"        id="accessibility-feedback"        name="query-purpose"        value="accessibility-feedback" />
+
+    <br />
+
+    <label for="blog-suggestion">
+        Blog Suggestion
+    </label>
+
+    <input        type="radio"        id="blog-suggestion"        name="query-purpose"        value="blog-suggestion"/>
+ </fieldset>
+</br>
 
                 <div>
                     <label for="query">
@@ -101,6 +143,51 @@
                 </div>
 
                 <br />
+<fieldset>
+
+    <legend>
+        Which topics are you interested in?
+    </legend>
+
+    <label for="digital-accessibility">
+        Digital Accessibility
+    </label>
+
+    <input        type="checkbox"        id="digital-accessibility"        name="topics"        value="digital-accessibility"    />
+
+    <br />
+
+    <label for="assistive-technology">
+        Assistive Technology
+    </label>
+
+    <input        type="checkbox"        id="assistive-technology"        name="topics"        value="assistive-technology"    />
+
+    <br />
+
+    <label for="blindness-awareness">
+        Blindness Awareness
+    </label>
+
+    <input        type="checkbox"        id="blindness-awareness"        name="topics"        value="blindness-awareness"    />
+
+    <br />
+
+    <label for="accessibility-testing">
+        Accessibility Testing
+    </label>    
+<input        type="checkbox"        id="accessibility-testing"        name="topics"        value="accessibility-testing"    />
+
+    <br />
+
+    <label for="inclusive-design">
+        Inclusive Design
+    </label>
+
+    <input        type="checkbox"        id="inclusive-design"        name="topics"        value="inclusive-design"   />
+
+</fieldset>
+<br>
 
                 <button type="submit">
                     Submit
